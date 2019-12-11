@@ -8,6 +8,15 @@ public class BinarySearchImpl {
     //Sorting an array
     //Search the array
     //return the result
+
+    public SortingAlgorithm getSortingAlgorithm() {
+        return sortingAlgorithm;
+    }
+
+    public void setSortingAlgorithm(SortingAlgorithm sortingAlgorithm) {
+        this.sortingAlgorithm = sortingAlgorithm;
+    }
+
     @Autowired
     private SortingAlgorithm sortingAlgorithm;
 

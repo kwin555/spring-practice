@@ -6,8 +6,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
 
 @Component
 public class ComponentDAO {
@@ -25,13 +23,4 @@ public class ComponentDAO {
     @Autowired
     ComponentJdbcConnection componentJdbcConnection;
 
-    @PostConstruct
-    public void postConstruct() {
-        logger.info("post construct");
-    }
-
-    @PreDestroy
-    public void preDestory() {
-        logger.info("pre destroy");
-    }
 }
